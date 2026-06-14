@@ -1,0 +1,89 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Aarav",
+      "email": "aarav@student.com",
+      "password": "1234",
+      "role": "student",
+      "roomNo": "A-101"
+    },
+    {
+      "id": "2",
+      "name": "Diya",
+      "email": "diya@student.com",
+      "password": "1234",
+      "role": "student",
+      "roomNo": "B-204"
+    },
+    {
+      "id": "3",
+      "name": "Warden Meera",
+      "email": "warden@hostel.com",
+      "password": "admin123",
+      "role": "admin",
+      "roomNo": "-"
+    }
+  ],
+  "requests": [
+    {
+      "id": "1",
+      "title": "Fan not working",
+      "description": "Room fan is not rotating properly",
+      "category": "Electrical",
+      "roomNo": "A-101",
+      "studentId": 1,
+      "studentName": "Aarav",
+      "priority": "High",
+      "status": "Resolved",
+      "createdAt": "2026-06-11"
+    },
+    {
+      "title": "room not clean",
+      "description": "no cleaning done from 1 week",
+      "category": "Cleaning",
+      "roomNo": "312",
+      "priority": "Medium",
+      "status": "In Progress",
+      "createdAt": "2026-06-13",
+      "studentId": 1,
+      "studentName": "Aarav",
+      "id": "fZUq_dZdSBw"
+    },
+    {
+      "title": "help",
+      "description": "help needed",
+      "category": "Furniture",
+      "roomNo": "B-204",
+      "studentId": "2",
+      "studentName": "Diya",
+      "priority": "Low",
+      "status": "In Progress",
+      "createdAt": "2026-06-13",
+      "id": "a6q5yi2"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Electrical"
+    },
+    {
+      "id": "2",
+      "name": "Plumbing"
+    },
+    {
+      "id": "3",
+      "name": "Cleaning"
+    },
+    {
+      "id": "4",
+      "name": "Furniture"
+    },
+    {
+      "id": "5",
+      "name": "Internet"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
