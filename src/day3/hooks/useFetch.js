@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from "react";
-import api from "../../api/api";
+import api from "../../day1/api/api";
 
 function useFetch(endpoint, immediate = true) {
   const [data, setData] = useState([]);

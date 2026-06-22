@@ -1,9 +1,9 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
-import api from "../../api/api";
+import api from "../../day1/api/api";
 import { useAuth } from "../../context/AuthContext";
-import SummaryCards from "../../components/SummaryCards";
-import RequestList from "../../components/RequestList";
+import SummaryCards from "../../day1/components/SummaryCards";
+import RequestList from "../../day1/components/RequestList";
 import useFetch from "../../day3/hooks/useFetch";
 import useRequestFilters from "../../day3/hooks/useRequestFilters";
 import FilterBar from "../../day3/components/FilterBar";

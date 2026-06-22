@@ -1,8 +1,8 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
-import SummaryCards from "../../components/SummaryCards";
-import RequestList from "../../components/RequestList";
+import SummaryCards from "../../day1/components/SummaryCards";
+import RequestList from "../../day1/components/RequestList";
 import useFetch from "../../day3/hooks/useFetch";
 import useRequestFilters from "../../day3/hooks/useRequestFilters";
 import FilterBar from "../../day3/components/FilterBar";
@@ -112,7 +112,7 @@ function StudentDashboard() {
           />
 
           <h4 className="mb-3">
-            My Complaints
+            My Complaints1
           </h4>
 
           <RequestList requests={filteredRequests} />

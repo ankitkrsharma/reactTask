@@ -1,4 +1,4 @@
-import RequestCard from "../day2/components/RequestCard";
+import RequestCard from "../../day2/components/RequestCard";
 
 function RequestList({
   requests,

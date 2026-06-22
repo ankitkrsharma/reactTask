@@ -20,7 +20,7 @@ function SearchFilter({ filters, setFilters, categories }) {
       <div className="card-body">
         <h5 className="mb-3">Search & Filters</h5>
 
-        <div className="row g-3">
+        <div className="row g-3">s
           <div className="col-md-4">
             <label className="form-label">Search by Title</label>
             <input

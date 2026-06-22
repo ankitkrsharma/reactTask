@@ -58,9 +58,45 @@
       "studentId": "2",
       "studentName": "Diya",
       "priority": "Low",
-      "status": "In Progress",
+      "status": "Resolved",
       "createdAt": "2026-06-13",
       "id": "a6q5yi2"
+    },
+    {
+      "title": "gsgn",
+      "description": "sgnsf",
+      "category": "Electrical",
+      "roomNo": "A-101",
+      "studentId": "1",
+      "studentName": "Aarav",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2026-06-22",
+      "id": "sOv83cFB4WA"
+    },
+    {
+      "title": "rgearg",
+      "description": "DFGDFG",
+      "category": "Electrical",
+      "roomNo": "A-101",
+      "studentId": "1",
+      "studentName": "Aarav",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2026-06-22",
+      "id": "VJw3RScj2A4"
+    },
+    {
+      "title": "avdsc",
+      "description": "svsdv",
+      "category": "Electrical",
+      "roomNo": "A-101",
+      "studentId": 1,
+      "studentName": "Aarav",
+      "priority": "Medium",
+      "status": "Open",
+      "createdAt": "2026-06-22",
+      "id": "DyZ4AZpondU"
     }
   ],
   "categories": [

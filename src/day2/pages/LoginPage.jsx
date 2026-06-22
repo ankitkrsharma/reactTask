@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Formik, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom";
-import api from "../../api/api";
+import api from "../../day1/api/api";
 import { useAuth } from "../../context/AuthContext";
 
 const validationSchema = Yup.object({
@@ -27,18 +27,24 @@ function LoginPage() {
     try {
       const response = await api.get("/users", {
         params: {
-          email: values.email,
-          password: values.password,
+          email: values.email.trim(),
         },
       });
 
-      if (response.data.length === 0) {
+      const loggedUser = response.data[0];
+
+      if (!loggedUser || loggedUser.password !== values.password.trim()) {
         setLoginError("Invalid email or password");
-      } else {
-        const loggedUser = response.data[0];
-        login(loggedUser);
-        navigate(loggedUser.role === "admin" ? "/admin-dashboard" : "/student-dashboard");
+        return;
       }
+
+      login(loggedUser);
+
+      navigate(
+        loggedUser.role === "admin"
+          ? "/admin-dashboard"
+          : "/student-dashboard"
+      );
     } catch (error) {
       setLoginError("Login failed. Try again.");
     } finally {

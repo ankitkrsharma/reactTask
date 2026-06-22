@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import api from "../api/api";
-import SummaryCards from "../components/SummaryCards";
-import RequestForm from "../components/RequestForm";
-import SearchFilter from "../components/SearchFilter";
-import RequestList from "../components/RequestList";
+import api from "../day1/api/api";
+import SummaryCards from "../day1/components/SummaryCards";
+import RequestForm from "../components/components/RequestForm";
+import SearchFilter from "../day1/components/SearchFilter";
+import RequestList from "../components/components/RequestList";
 
 function DashboardPage() {
   const [requests, setRequests] = useState([]);
