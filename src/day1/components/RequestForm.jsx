@@ -25,7 +25,7 @@ function RequestForm({ categories, currentUser, onSuccess }) {
         description: values.description.trim(),
         category: values.category,
         roomNo: values.roomNo.trim(),
-        studentId: Number(currentUser.id),
+        studentId: currentUser.id,
         studentName: currentUser.name,
         priority: values.priority,
         status: "Open",
